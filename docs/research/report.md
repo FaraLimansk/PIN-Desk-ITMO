@@ -24,7 +24,11 @@
 
 | Название | Работы или проекты по теме | Ссылка |
 |---|---|---|
-| … | … | … |
+| Technical University of Munich, группа Applied Education Technologies (AET) | Развивает открытую учебную платформу Artemis (задания, экзамены, аналитика обучения). Серверную часть Artemis переводили с монолита на микросервисы: в магистерской работе 2021 г. выделены два сервиса, которые масштабируются независимо, и подготовлены Kubernetes-манифесты для развёртывания | https://aet.cit.tum.de/research/education-technologies/artemis/ |
+| Aalto University, исследовательская группа LeTech | Разработала LMS A+ (в Tampere University её используют под названием Plussa [1]): сервисно-ориентированная архитектура, REST API, внешние сервисы автоматической проверки заданий | https://github.com/apluslms/a-plus |
+| Knowledge Media Institute, The Open University (Великобритания) | Группа OU Analyse выпустила набор данных OULAD (22 курса, более 32 тыс. студентов), который вы планируете использовать для прототипа дашборда. Датасет получил приз Educational Data Mining Society как лучший открытый образовательный набор данных (2023) | https://analyse.kmi.open.ac.uk/open_dataset |
+| Moodle HQ (Moodle Pty Ltd) | Разрабатывает ядро Moodle и каталог плагинов; интеграция с внешними системами идёт через веб-сервисы (API). Служит базовым примером «монолитное ядро + плагины» [6] | https://moodle.com |
+| Society for Learning Analytics Research (SoLAR) | Международное сообщество по аналитике обучения, организует конференцию LAK, где обсуждают дашборды успеваемости и их влияние на студентов [4] | https://www.solaresearch.org |
 
 ### Конференции
 
@@ -32,7 +36,11 @@
 
 | Название | Какие работы по теме представлены | Ссылка |
 |---|---|---|
-| … | … | … |
+| LAK — International Conference on Learning Analytics & Knowledge (SoLAR) | Обзор влияния дашбордов на успеваемость и вовлечённость, LAK ‘24, Киото [4]; обзор исследований по учебным дашбордам (Schwendimann и др., LAK ‘16, DOI 10.1145/2883851.2883930) | https://www.solaresearch.org/events/lak/ |
+|iCCECE — International Conference on Computing, Electronics & Communications Engineering (2022, Саутенд, Великобритания)|Volynsky E., Mehmed M., Krusche S. Architect: A Framework for the Migration to Microservices. Это кейс миграции LMS Artemis: три микросервиса и переход от общей базы к базе на каждый сервис|https://doi.org/10.1109/iCCECE55162.2022.9875096|
+|ICALT — IEEE International Conference on Advanced Learning Technologies (13-я, 2013)|Karavirta V., Ihantola P., Koskinen T. Service-Oriented Approach to Improve Interoperability of E-Learning Systems (с. 341–345). Это основа архитектуры A+|https://doi.org/10.1109/ICALT.2013.105|
+|EDM — International Conference on Educational Data Mining (IEDMS)|Главная конференция по анализу данных из LMS и учебных сред. Общество IEDMS присудило OULAD приз за лучший открытый образовательный набор данных|https://educationaldatamining.org/conferences|
+|«Информационные технологии в образовании» (ИТО-Саратов, СГУ им. Н. Г. Чернышевского)|Родичкин П. А., Соловьев В. М. Применение микросервисной архитектуры в образовательном процессе (русскоязычная работа)|https://old.sgu.ru/sites/default/files/textdocsfiles/2023/01/17/rodichkin_p.a.pdf|
 
 ### Научные журналы
 
@@ -94,6 +102,7 @@
 | Мобильное приложение | Да | Да | Да | Да (просмотр) | Да (iOS/Android, push-уведомления) |
 | Адаптация под факультет ПИН | Через плагины | Сложная (крупный Rails-монолит) | Нет (закрытое SaaS, собственный код недоступен) | Нет (закрытая система вуза) | Да, свой код |
 | Открытость | Открытый код | Открытый код (AGPL), часть закрыта | Закрытый | Закрытый | Собственная разработка |
+|Ограничения использования в РФ|Нет (открытый код, можно развернуть на своём сервере)|Подтверждений ограничений для РФ не найдено (не проверено)|Есть ограничения вендора (см. примечание); блокировка самого Classroom в рассмотренных источниках не найдена|Нет (российская система)|Нет (собственный код и инфраструктура)|
 
 ### Выводы по сравнению
 
